@@ -5,9 +5,9 @@ param (
 	[switch] $strict,
 	[string] $tfsUrl = "http://tfs.niaid.nih.gov:8080/tfs",
 	[string] $tfsPath = "$/CustomDevelopment/NEAR/Database/Deltas/NEAR 2.5.0",
-    [string] $pathToTFexe = "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\TF.exe"
+	[string] $pathToTFexe = "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\TF.exe"
 )
-#usage: .\sqlDeploy.ps1 -path .\SQL -server ai-dbdev1 -database Test -strict
+#usage: .\deployFromTFS.ps1 -path .\SQL -server ai-dbdev1 -database Test -strict
 
 $fullpath = rvpa $path
 echo "Source directory: $fullpath"
