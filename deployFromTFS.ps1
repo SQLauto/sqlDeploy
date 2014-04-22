@@ -21,7 +21,7 @@ echo "Connecting to TFS server $tfsUrl"
 cd $path
 & "$pathToTFexe" workspace /new _SQLDeploy /server:"$tfsUrl" /location:local /noprompt
 & "$pathToTFexe" workfold "$tfsPath" . /workspace:"_SQLDeploy"
-& "$pathToTFexe" get /noprompt 
+& "$pathToTFexe" get /overwrite /noprompt 
 & "$pathToTFexe" workspace /delete _SQLDeploy /noprompt
 
 #------------------  SIGNATURES ------------------------
