@@ -20,6 +20,6 @@ Usage
 
 Strict Mode
 =========
-The `-strict` mode will try to find and verified a _detached_ signature (.sig or .asc) for each .sql file, using Gpg4win, a GNU clone of PGP.
+The `-strict` mode will try to find and verify a _detached_ signature (.sig or .asc) for each .sql file, using Gpg4win, a GNU clone of PGP.
 If signature not found, or the file has been modified since, or the signature key is unknown or untrusted, deployment will be aborted.
 
