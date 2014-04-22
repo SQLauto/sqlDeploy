@@ -7,11 +7,12 @@ a PowerShell script that deploys .sql files from TFS to a SQL database
 Assumptions
 =========
 
+- Assumes current user has read permissions for the TFS server.
 - Assumes `SQLCMD.exe` is in the path.
 - Assumes that the target database exists.
 - Assumes current user has permissions to perform actions contained in the SQL scripts (ALTER TABLE etc).
 - Assumes the scripts do not use transactions (wraps each script into BEGIN TRAN / COMMIT TRAN).
-- The strict mode assumes `GPG.exe` is in the path.
+- The strict mode assumes `GPG.exe` is in the PATH.
 
 Usage
 =========
